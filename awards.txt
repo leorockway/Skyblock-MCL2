@@ -1,0 +1,11 @@
+local _ = {}
+_[1] = {}
+_[2] = {}
+_[3] = {["dirt_with_grass"] = 61, ["coarse_dirt"] = 58, ["dirt"] = 223, ["bedrock"] = 28, ["sapling"] = 3, ["sand"] = 607, ["sprucesapling"] = 1}
+_[4] = {["chest"] = 2}
+_[5] = {["mcl_core"] = _[3], ["mcl_chests"] = _[4]}
+_[6] = {}
+_[7] = {["coarse_dirt"] = 58, ["sand"] = 363, ["dirt"] = 144, ["dirt_with_grass"] = 32, ["bedrock"] = 26, ["leaves"] = 45, ["tree"] = 5, ["sprucetree"] = 14, ["spruceleaves"] = 56, ["sapling"] = 1, ["sandstonesmooth"] = 12}
+_[8] = {["mcl_core"] = _[7]}
+_[9] = {["eat"] = _[1], ["joins"] = 12, ["craft"] = _[2], ["place"] = _[5], ["unlocked"] = _[6], ["deaths"] = 0, ["count"] = _[8], ["name"] = "singleplayer", ["chats"] = 0}
+return {[_[9]] = {["eat"] = {}, ["joins"] = 0, ["craft"] = {}, ["place"] = {}, ["unlocked"] = {}, ["deaths"] = 0, ["count"] = {}, ["name"] = _[9], ["chats"] = 0}, ["singleplayer"] = _[9]}
