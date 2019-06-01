@@ -9,7 +9,6 @@ minetest.register_abm({
     local y = pos.y
     local z = pos.z
     local pos_above = {x = x, y = y + 1, z = z}
-    local pos_way_above = {x = x, y = y + 21, z = z}
     local water_positions_check = {}
     water_positions_check[1] = {x = x + 1, y = y, z = z}
     water_positions_check[2]= {x = x - 1, y = y, z = z}
@@ -23,8 +22,9 @@ minetest.register_abm({
             end
         end
         if water_match ~= 4 then
-            local line = minetest.line_of_sight(pos_above, pos_way_above)
-            if line then
+            local exposed = minetest.get_node_light(pos_above, 0.5)
+            print(exposed)
+            if  exposed == 15 then
                 minetest.set_node(pos, {name = "mcl_core:ice"})
             end
         end
