@@ -23,7 +23,6 @@ minetest.register_abm({
         end
         if water_match ~= 4 then
             local exposed = minetest.get_node_light(pos_above, 0.5)
-            print(exposed)
             if  exposed == 15 then
                 minetest.set_node(pos, {name = "mcl_core:ice"})
             end

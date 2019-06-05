@@ -46,3 +46,4 @@ load_mod_worldedit = false
 load_mod_worldedit_limited = false
 load_mod_worldedit_infinity = false
 load_mod_worldedit_shortcommands = false
+auth_backend = sqlite3
