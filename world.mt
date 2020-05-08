@@ -1,6 +1,6 @@
 creative_mode = false
 player_backend = sqlite3
-gameid = MineClone2
+gameid = mineclone2
 enable_damage = true
 backend = sqlite3
 load_mod_tsm_gift_example = false
